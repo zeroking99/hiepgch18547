@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+* :focus {
+    outline: none;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.header {
+    background-color: aqua;
+    padding: 10px;
+    margin: auto;
+    float: none;
+}
+
+.content {
+    margin-left: 50px;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: #36393f;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}

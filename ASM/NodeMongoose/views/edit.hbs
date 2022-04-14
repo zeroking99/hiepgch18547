@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+<body>
+    <div class="header">
+        <h1><a href="/">Welcome to PIPI</a></h1>
+    
+    </div>
+    <div class=" content">
+        <form action="/edit" method="post">
+        <input type="hidden" name="id" value="{{product._id}}"><br>
+        Name: <br><input type="text" name="txtName" size=" 100" value="{{product.name}}">
+        <br>
+         Color: <br> <input  type="text" name="txtColor"size="100" value="{{product.color}}" >  
+        <br>
+        Price: <br> <input type="text" name="txtPrice" size="100"  value="{{product.price}}">
+        <br>
+        PictureURL:<div> <img src="{{product.picURL}}" width="150" height="100"/> </div>
+        
+        <input type="text" name="txtPic" size="100" value="{{product.picURL}}">
+        <br>
+        <input type="submit" value="edit" onclick="return confirm('Successful')">
+    </form>
+    </div>
+    <br>
+    <div id="footer">
+        <footer class="footer">
+            <h1>Copyright by NguyenVanHiep - 2022</h1>
+        </footer>
+    </div>
+</body>
+</html>
